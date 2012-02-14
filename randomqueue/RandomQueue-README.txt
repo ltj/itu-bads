@@ -1,17 +1,17 @@
 * Assignment: RandomQueue
 ** Student info:
-   - Group name:
-   - Name1:
-   - Email1:
+   - Group name: Algorythms
+   - Name1: Lars Toft Jacobsen
+   - Email1: latj@itu.dk
    - Name2:
    - Email2:
-   - Operating system:
-   - Compiler:
-   - Text editor / IDE:
+   - Operating system: Mac OS X 10.7.3
+   - Compiler: javac 1.6.0_29
+   - Text editor / IDE: TextMate
 
 ** Assignment info:
    Mark on of the following boxes with an X
-   [ ] Yes, to the best of our knowledge, everything works as it
+   [X] Yes, to the best of our knowledge, everything works as it
    should. In particular, the main method below behaves as expected.
    [ ] No, our solution does not work. (We will not get credit for this.)
    Here's what doesn't work:
@@ -23,7 +23,7 @@
 
 
    Please check if true:
-   [ ] Yes, we "avoid loitering" (in the course book's terminology) by
+   [X] Yes, we "avoid loitering" (in the course book's terminology) by
    freeing unused references
 
 ** Test client
@@ -100,6 +100,13 @@ Remaining two colours from first shuffle: red green
 ** Your output
    
    Please paste the output from your code below:
+
+Some die rolls: 5 6 5 4 2 6 2 6 1 3 3 3 5 1 6 3 5 2 1 1 4 6 5 4 3 4 5 4 2 
+Mean (should be around 3.5): 3.4837
+Standard deviation (should be around 1.7): 1.7114
+Two colours from first shuffle: green blue 
+Entire second shuffle: yellow green red green blue 
+Remaining two colours from first shuffle: green blue
 
 ** Help
    List whatever help (if any) that you received, including help from

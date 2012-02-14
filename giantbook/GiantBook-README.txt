@@ -2,15 +2,15 @@
  *  BADS 2012 assignment 1: GiantBook
  **********************************************************************/
 
-Name1:
-Email1:
-Name2:
-Email2:
-Group name:
+Name1: Lars Toft Jacobsen
+Email1: latj@diku.dk
+Name2: (David Reuss - has left the course)
+Email2: (dreu@itu.dk)
+Group name: Algorythms
 
-Operating system:
-Compiler:
-Text editor / IDE:
+Operating system: Mac OS X
+Compiler: javac 1.6.0_29
+Text editor / IDE: TextMate
 
 Optional: Total hours to complete assignment:
 
@@ -19,10 +19,10 @@ Please mark one of the following boxes with an X
 
 [ ] Yes, to the best of our knowledge, our code works as it should.
 
-[ ] No, our solution does not work. (We will not get credit for this.)
+[X] No, our solution does not work. (We will not get credit for this.)
 Here's what doesn't work:
 
-
+Failed to get the great idea to solve the non-isolation problem :(
 
 /**********************************************************************
  * Simulation results 
@@ -48,12 +48,12 @@ Here's what doesn't work:
 
        N    T   giant (stddev)   nosingles (stddev)  connect (stddev)
  --------------------------------------------------------------------
-     100: 100 7.18e+01 6.0e+00    2.18e+02  1.4e+01  2.66e+02 4.4e+01 
-    1000:
-   10000:
-  100000:
- 1000000:
-10000000:
+     100: 100 	73.67 (6.78)    		-  			257.84 (61.27) 
+    1000: 100	694.41 (15.27)			-			3794.72 (698.04)
+   10000: 100	6938.55 (50.26) 		-			48284.23 (6837.25)
+  100000: 100	69325.39 (162.71)		-			604626.92 (66333.68)			
+ 1000000: 100	693272.50 (510.70)		-			7193873.54 (592999.43)
+10000000: 10	6930859.10 (1791.80)	-			84117802.10 (5895303.48)
 
 /**********************************************************************
  * Algorithm analysis
@@ -64,12 +64,12 @@ Assuming we never run out of memory or heap space, if we let our
 algorithm for detecting the emergence of a giant component run for 24
 hours, it could compute the answer for
 
-	  N = ...
+	  N = n/a (I'm not sure how qualified the answer should be)
 
 We've run the code using a quick-find implemention as well.
 In 1 hour, the largest instance we could manage had
 
-          N = ...
+          N = n/a
 
 
 
@@ -83,7 +83,7 @@ In 1 hour, the largest instance we could manage had
 **********************************************************************/
 
 The occurence of a giant component happens at a time 
-    [ ] linear in the size of the network
+    [X] linear in the size of the network
     [ ] quadratic in the size of the network
     [ ] logarithmic in the size of the network
     [ ] something else, maybe ...
@@ -91,19 +91,19 @@ The occurence of a giant component happens at a time
 The whole network is connected at a time 
     [ ] linear in the size of the network
     [ ] quadratic in the size of the network
-    [ ] logarithmic in the size of the network
+    [X] logarithmic in the size of the network
     [ ] something else, maybe ...
 
 The last isolated individual becomes connected 
     [ ] around the time that the giant component emerges
-    [ ] around the time that the whole network becomes connected
+    [X] around the time that the whole network becomes connected
     [ ] something else, maybe ...
 
 Finally, was it important that I defined the giant component to be of
 size N/2, or could I have used N/10? 9N/10? How did you find your
 answer (thinking about it? making an experiment? reading an article?)
 
-...
+It could probably be any constant in relation to N (I thought about that...briefly)
 
 
 /**********************************************************************
@@ -119,3 +119,6 @@ answer (thinking about it? making an experiment? reading an article?)
  *  you enjoyed doing it. In particular, tell us how this exercise 
  *  could be improved.                                             
  **********************************************************************/
+
+I'm quite the "team learner" so doing this in groups is an excellent idea (ahem..necessity).
+

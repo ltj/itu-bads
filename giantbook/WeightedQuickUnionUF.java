@@ -11,21 +11,19 @@ public class WeightedQuickUnionUF {
     private int[] id;    // id[i] = parent of i
     private int[] sz;    // sz[i] = number of objects in subtree rooted at i
     private int count;   // number of components
+	private int countIso; // number of isolated nodes
     
 	// Assigment: Instance variables
-	private int[] connected; // connection map
     private int total;
     private boolean giantComponentReached = false;
     private boolean nonIsolatedReached = false;
 
     // Create an empty union find data structure with N isolated sets.
     public WeightedQuickUnionUF(int N) {
-        total = N; // assignment: save the total amount of elements
+        total = countIso = N; // assignment: save the total amount of elements
         count = N;
         id = new int[N];
         sz = new int[N];
-
-        connected = new int[N];
 
         for (int i = 0; i < N; i++) {
             id[i] = i;
@@ -82,15 +80,17 @@ public class WeightedQuickUnionUF {
         }
         count--;
 
-        connected[p] = 1;
-        connected[q] = 1;
+		// for(int x=0; x<sz.length; x++) {
+		// 			StdOut.print(sz[x] + " ");
+		// 		}
+		// 		StdOut.println("count: " + count);
 
-		// oy vey! nisht gefloygn...
-		// second if is always true
-        if (!nonIsolatedReached) {
-            if (connected.length >= total) {
-                nonIsolatedReached = true;
-            }
+		// oy vey! We don't have to check for this condition before
+		// the no. components is equal to or less that no. nodes
+        if (!nonIsolatedReached && count <= (total / 2)) {
+            if(isNonIsolation()) {
+				nonIsolatedReached = true;
+			}
         }
 
 		// A giant component is present when the size of a newly unified
@@ -101,6 +101,15 @@ public class WeightedQuickUnionUF {
             }
         }
     }
+
+	// Non-isolation is not present if a node is its own parent and has no children
+	private boolean isNonIsolation() {
+		int sum = 0;
+		for(int i=0;i < sz.length;i++) {
+			if(sz[i] == 1 && id[i] == i) return false;
+		}
+		return true;
+	}
 
 
     public static void main(String[] args) {

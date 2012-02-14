@@ -28,7 +28,8 @@ public class GiantBook {
 		}
 		StdOut.println("samples\t\tnon-isolation\t\tgiant\t\tconnected");
 		StdOut.printf("%d\t\t%.2f (%.2f)\t\t%.2f (%.2f)\t\t%.2f (%.2f)\n", 
-			samples, navg, Math.sqrt(ndiff), gavg, Math.sqrt(gdiff), cavg, Math.sqrt(cdiff));
+			samples, navg, Math.sqrt(ndiff/samples), 
+			gavg, Math.sqrt(gdiff/samples), cavg, Math.sqrt(cdiff/samples));
 	}
 	
     public static void main(String[] args) {
@@ -66,7 +67,7 @@ public class GiantBook {
 	            if (!reachedNonIsolated && wqf.isNonIsolated()) {
 	                reachedNonIsolated = true;
 					roundsStats[i][0] = rounds;
-	                // StdOut.println("NONISOLATED ("+rounds+")");
+	                //StdOut.println("NONISOLATED ("+rounds+")");
 	            }
 
 	            if (!reachedConnected && wqf.isConnected()) {

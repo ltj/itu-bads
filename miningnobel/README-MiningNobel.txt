@@ -6,7 +6,7 @@ Name1: Lars Toft Jacobsen
 Email1: latj@itu.dk
 Name2: Alexander Kirk Jørgensen
 Email2: akir@itu.dk
-Group name:
+Group name: Algorythms
 
 Operating system: Mac OS X / ?
 Text editor / IDE: TextMate / ?

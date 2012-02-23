@@ -2,14 +2,14 @@
  *  Programming assignment: Mining for Nobel
  **********************************************************************/
 
-Name1:
-Email1:
-Name2:
-Email2:
+Name1: Lars Toft Jacobsen
+Email1: latj@itu.dk
+Name2: Alexander Kirk Jørgensen
+Email2: akir@itu.dk
 Group name:
 
-Operating system:
-Text editor / IDE:
+Operating system: Mac OS X / ?
+Text editor / IDE: TextMate / ?
 
 Optional: Total hours to complete assignment:
 

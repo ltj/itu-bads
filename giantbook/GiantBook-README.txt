@@ -64,7 +64,13 @@ Assuming we never run out of memory or heap space, if we let our
 algorithm for detecting the emergence of a giant component run for 24
 hours, it could compute the answer for
 
-	  N = n/a (I'm not sure how qualified the answer should be)
+	  N = 
+	egentlig er union og find  lg N operationer i Weighted Quick-Union, men
+	eftersom der benyttes "path compression" er de tæt på at være konstant
+	tid. Det fremgår af kørslerne at giant optræder ved ~0,693N runder.
+	Under antagelsen af at find og union tilvæksten ~ >1 og at vi kan udføre
+	10^9 "runder"pr sek (det er virkelig et guestimat) kan der på 24hr optræde
+	en giant for N ~ (86400 * 10^9)/0,693 ~ 1,24675325 * 10^14
 
 We've run the code using a quick-find implemention as well.
 In 1 hour, the largest instance we could manage had

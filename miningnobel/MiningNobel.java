@@ -4,11 +4,11 @@ public class MiningNobel
     private static int N;
     private static double[] A = new double[N];
     
-    public void main(String[] args) {
+    public static void main(String[] args) {
         for (int i = 0; i < N; ++i) {
             A[i] = StdIn.readDouble();
         }
-        this.count();
+         count();
     }
     
     private static int count() {

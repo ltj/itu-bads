@@ -1,27 +1,59 @@
+import java.util.Arrays;
+
 public class MiningNobel 
 {
-    int count;
-    private static int N;
-    private static double[] A = new double[N];
-    
-    public static void main(String[] args) {
-        for (int i = 0; i < N; ++i) {
-		    A[i] = StdIn.readDouble();
-        }
-        StdOut.println(count());
-    }
-    
-    private static int count() {
-        int count = 0;
-        for (int i = 0; i < N; ++i) {
-            for (int j = 0; j < N; ++j) {
-                for (int k = 0; k < N; ++k) {
-                    for (int l = 0; l < N; l++) {
-                        if (A[i] + A[j] + A[k] + A[l] == 0) { count++; }
+    private static double[] test = { 0.11, 0.22, 0.33, -0.66 };
+
+	// Exhaustive search approach
+    public static int exhaustiveCount(double[] ds) {
+		int n = ds.length;
+        int count = 0, q = 0;
+        for (int i = 0; i < n; ++i) {
+            for (int j = i + 1; j < n; ++j) {
+                for (int k = j + 1; k < n; ++k) {
+                    for (int l = k + 1; l < n; l++) {
+                        if (ds[i] + ds[j] + ds[k] + ds[l] == 0) { count++; }
                     }
                 }
             }
         }
         return count;
     }
+
+	// ~ N^3 approach
+	public static int fastCount(double[] ds) {
+		int n = ds.length;
+		Arrays.sort(ds);
+		int count = 0;
+		for (int i = 0; i < n; i++) {
+	    	for (int j = i + 1; j < n; j++) {
+				for (int k = j + 1; k < n; k++) {
+					int l = Arrays.binarySearch(ds, -(ds[i] + ds[j] + ds[k]));
+	        		if (ds[i] + ds[j] + ds[k] - l == 0) count++;
+				}
+			}
+		}
+		return count;
+	}
+   
+	// main
+    public static void main(String[] args) {
+		
+        StdOut.println(exhaustiveCount(test));
+		StdOut.println(fastCount(test));
+
+		In in = new In("constants.csv");
+		String[] stringsA = in.readAll().trim().split(" , |\\n");
+		double[] A = new double[stringsA.length];
+		for (int i = 0; i < A.length-1; i+=2) {
+			A[i] = Double.parseDouble(stringsA[i+1]);
+			StdOut.println(A[i]);
+		}
+		Stopwatch sw = new Stopwatch();
+		StdOut.println("Exhaustive search count: " + exhaustiveCount(A));
+		StdOut.println("Exhaustive search time: " + sw.elapsedTime());
+		in.close();
+    }
+    
+	
 }

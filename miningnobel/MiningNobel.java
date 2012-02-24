@@ -28,8 +28,9 @@ public class MiningNobel
 		for (int i = 0; i < n; i++) {
 	    	for (int j = i + 1; j < n; j++) {
 				for (int k = j + 1; k < n; k++) {
-					int l = Arrays.binarySearch(ds, -(ds[i] + ds[j] + ds[k]));
-	        		if (ds[i] + ds[j] + ds[k] - l == 0) count++;
+					double target = -(ds[i] + ds[j] + ds[k]);
+					int l = Arrays.binarySearch(ds, target);
+	        		if (l > k) count++;
 				}
 			}
 		}
@@ -52,6 +53,9 @@ public class MiningNobel
 		Stopwatch sw = new Stopwatch();
 		StdOut.println("Exhaustive search count: " + exhaustiveCount(A));
 		StdOut.println("Exhaustive search time: " + sw.elapsedTime());
+		sw = new Stopwatch();
+		StdOut.println("Fast search count: " + fastCount(A));
+		StdOut.println("Fast search time: " + sw.elapsedTime());
 		in.close();
     }
     

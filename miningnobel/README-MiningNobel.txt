@@ -16,7 +16,7 @@ Optional: Total hours to complete assignment:
 
 Please mark one of the following boxes with an X
 
-[ ] Yes, to the best of our knowledge, our N^3 log N solution works as
+[X] Yes, to the best of our knowledge, our N^3 log N solution works as
 it should.
 
 [ ] No, our solution does not work. (We will not get credit for this.)
@@ -40,34 +40,35 @@ Here's what doesn't work:
  * and practical analyses.
  **********************************************************************/
 
-Number of comparisons performed as a function of N:  ~...
+Number of comparisons performed as a function of N:  ~N^4
 
 Experiments:
 
  N          time (seconds)
 ------------------------------
-...
-...
+4		0.001
+352		2.996
 
 [ ] Yes, our experiments are consistent with our theoretical analysis
 
-[ ] No, they are not. Instead, it looks more as if ....
-
+[X] No, they are not. Instead, it looks more as if ....
+The number of comparisons is (N^4)/5, since N^4 = ~15e+9 if N = 324.
+This is assuming 1 comparison every nanosecond.
 
 
 Largest values of N in given time limit
 ---------------------------------------
-1 minute: ...
-1 day:    ... 
-1 year:   ... 
+1 minute: 740
+1 day:    4.559
+1 year:   19.927
 
 /**********************************************************************
  * Results
  **********************************************************************/
 
 Number of 4-tuples in constants.csv that sum to 0 found by 
-our exhaustive search implementation:    ...
-our N^3 log N implementation:            ...
+our exhaustive search implementation:    19 individual, 528 similar
+our N^3 log N implementation:            19 individual, 528 similar.
 (optional) our N^2 log N implementation: ...
 
 
@@ -106,7 +107,8 @@ international telephone dial code for Antarctica (672) , 6.510257720947266
  *  from TAs or fellow students. (Such help is allowed, but we want
  *  you to acknowledge it.)
  **********************************************************************/
-
+Morten F. Therkildsen helped us get across the finish line with the
+final part of our program.
 
 /**********************************************************************
  *  List any other comments here. Feel free to provide any feedback   

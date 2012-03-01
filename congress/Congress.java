@@ -4,18 +4,21 @@ public class Congress {
 	
 	public static void main(String[] args) {
 		
-		DynPQ<State> dpq = new DynPQ<State>();
 		In in = new In(args[0]);
 		
 		// read no. states/seats from first two lines
-		int states = in.readInt();
-		int seats = in.readInt();
+		// In.readInt() is not an option here since we
+		// cannot control scanner position - or is it me?
+		int states = Integer.parseInt(in.readLine());
+		int seats = Integer.parseInt(in.readLine());
+		
+		MaxPQ<State> dpq = new MaxPQ<State>(states);
 		
 		// insert states into queue with one seat
 		// and calculated quotient dependency
 		for(int i = states; i > 0 && !in.isEmpty(); i--) {
-			String name = in.readString();
-			int pop = in.readInt();
+			String name = in.readLine().trim();
+			int pop = Integer.parseInt(in.readLine());
 			dpq.insert(new State(name, pop));
 		}
 		
@@ -28,7 +31,6 @@ public class Congress {
 			dpq.insert(s);
 			seatsleft--;
 		}
-		StdOut.println("Done.");
 		
 		Iterator I = dpq.iterator();
 		while(I.hasNext()) {

@@ -1,4 +1,4 @@
-public class State implements Comparable<Integer>{
+public class State implements Comparable {
 	
 	private final String name;	// name of state
 	private int seats;			// seats in congress

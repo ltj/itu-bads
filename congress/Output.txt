@@ -1,0 +1,50 @@
+State: Massachusetts        Seats: 10
+State: New Jersey           Seats: 13
+State: New York             Seats: 31
+State: Georgia              Seats: 11
+State: Arizona              Seats: 6
+State: California           Seats: 52
+State: Kentucky             Seats: 6
+State: Missouri             Seats: 9
+State: Kansas               Seats: 4
+State: Louisiana            Seats: 7
+State: Maryland             Seats: 8
+State: Texas                Seats: 30
+State: Montana              Seats: 1
+State: Illinois             Seats: 20
+State: Michigan             Seats: 16
+State: Tennessee            Seats: 9
+State: Maine                Seats: 2
+State: South Carolina       Seats: 6
+State: West Virginia        Seats: 3
+State: Indiana              Seats: 10
+State: Connecticut          Seats: 6
+State: Oklahoma             Seats: 6
+State: Ohio                 Seats: 19
+State: Virginia             Seats: 11
+State: Florida              Seats: 23
+State: Oregon               Seats: 5
+State: Nebraska             Seats: 3
+State: Pennsylvania         Seats: 21
+State: Arkansas             Seats: 4
+State: Minnesota            Seats: 8
+State: North Carolina       Seats: 12
+State: Alaska               Seats: 1
+State: Iowa                 Seats: 5
+State: North Dakota         Seats: 1
+State: Rhode Island         Seats: 2
+State: Delaware             Seats: 1
+State: Mississippi          Seats: 5
+State: Wisconsin            Seats: 9
+State: Utah                 Seats: 3
+State: New Hampshire        Seats: 2
+State: South Dakota         Seats: 1
+State: Nevada               Seats: 2
+State: Wyoming              Seats: 1
+State: Hawaii               Seats: 2
+State: Vermont              Seats: 1
+State: Colorado             Seats: 6
+State: Alabama              Seats: 7
+State: Idaho                Seats: 2
+State: New Mexico           Seats: 3
+State: Washington           Seats: 9

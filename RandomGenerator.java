@@ -8,7 +8,9 @@ public class RandomGenerator {
 		Out out = new Out("RandomNumbers"+n+".txt");
 		
 		for (int i = 0; i < n; i++) {
-			out.println(Math.log(StdRandom.uniform(n)+1));
+			out.print("Random Number: , ");
+			out.printf("%.2f",(StdRandom.uniform(n)-n/2)*StdRandom.uniform());
+			out.println();
 		}
 	}
 }

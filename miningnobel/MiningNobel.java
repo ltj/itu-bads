@@ -3,7 +3,7 @@ import java.util.*;
 
 public class MiningNobel 
 {
-    private static Double[] test = { 0.11, 0.22, 0.33, -0.66 };
+
 
 	// Exhaustive search approach
 	public static int exhaustiveCount(Double[] ds) {
@@ -25,12 +25,13 @@ public class MiningNobel
 	// ~ N^3 approach
 	public static int fastCount(Double[] ds) {
 	int n = ds.length;
+	StdOut.println("n: " + n);
 	Arrays.sort(ds);
 	int count = 0;
 	for (int i = 0; i < n; i++) {
 		for (int j = i+1; j < n; j++) {
 			for (int k = j+1; k < n; k++) {
-				int l = Arrays.binarySearch(ds, -(ds[i]+ds[j]+ds[k]));
+				int l = Arrays.binarySearch(ds, -ds[i]-ds[j]-ds[k]);
 				if (l > k) count++;
 			}
 		}
@@ -41,7 +42,7 @@ public class MiningNobel
  // main
     public static void main(String[] args) {
   
-	In in = new In("constants.csv");
+	In in = new In(args[0]);
 	ArrayList<Double> Arr = new ArrayList<Double>();
 	String s = in.readLine();
 	while(in.hasNextLine()){
@@ -51,18 +52,17 @@ public class MiningNobel
 	}
   
 	Double[] A = Arr.toArray(new Double[0]);
+	int n = A.length;
   
 	Stopwatch sw = new Stopwatch();
-	StdOut.println("Exhaustive search count (n=352): " + exhaustiveCount(A));
-	StdOut.println("Exhaustive search time: " + sw.elapsedTime());
+	if (n < 512) {
+		StdOut.println("Exhaustive search count (n="+n+"): " + exhaustiveCount(A));
+		StdOut.println("Exhaustive search time: " + sw.elapsedTime());
   
-	sw = new Stopwatch();
-	StdOut.println("Exhaustive search count (n=4): " + exhaustiveCount(test));
-	StdOut.println("Exhaustive search time: " + sw.elapsedTime());
-  
-	sw = new Stopwatch();
+		sw = new Stopwatch();
+	}
 	StdOut.println("Fast search count: " + fastCount(A));
 	StdOut.println("Fast search time: " + sw.elapsedTime());
-	// in.close();
+	in.close();
     }
 }

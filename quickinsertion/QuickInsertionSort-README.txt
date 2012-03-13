@@ -1,0 +1,109 @@
+* Assignment: QuickInsertSort
+** Student info:
+   - Group name:
+   - Name1:
+   - Email1:
+   - Name2:
+   - Email2:
+   - Operating system:
+   - Processor:
+   - Clock Speed:
+   - Computer desciption (if that makes sense, e.g., "2008 MacBook
+     Pro", "Commodore 64", "Intel-based box I assembled myself", 
+     etc.):
+   - Compiler:
+   - Text editor / IDE:
+
+** Assignment info:
+   Mark one of the following boxes with an X
+   [ ] Yes, to the best of our knowledge, everything works as it
+   should. In particular, here is the test client that our code has
+   passed:
+
+
+   ... (insert some Java code here)
+
+
+
+   [ ] No, our solution does not work. (We will not get credit for this.)
+   In particular, it sorts 
+
+   .... (some numbers)
+
+   to 
+
+   .... (some numbers, not correctly sorted)
+
+
+   - Total hours to complete the assignment (optional): ...
+
+
+   RESULTS
+   
+   For each N, either complete the 7 lines (where it says ...) or
+   remove the lines are write "Couldn't see a difference".
+
+   N = 100:
+   No cutoff: 
+   mean running time: ... 
+   standard deviation: ...
+   
+   With cutoff = ...
+   mean running time: ... 
+   standard deviation: ...
+   improvement in percent: ...
+
+   N = 1000:
+   No cutoff: 
+   mean running time: ... 
+   standard deviation: ...
+   
+   With cutoff = ...
+   mean running time: ... 
+   standard deviation: ...
+   improvement in percent: ...
+
+   N = 10000:
+   No cutoff: 
+   mean running time: ... 
+   standard deviation: ...
+   
+   With cutoff = ...
+   mean running time: ... 
+   standard deviation: ...
+   improvement in percent: ...
+
+   N = 100000:
+   No cutoff: 
+   mean running time: ... 
+   standard deviation: ...
+   
+   With cutoff = ...
+   mean running time: ... 
+   standard deviation: ...
+   improvement in percent: ...
+
+   N = 1000000:
+   No cutoff: 
+   mean running time: ... 
+   standard deviation: ...
+   
+   With cutoff = ...
+   mean running time: ... 
+   standard deviation: ...
+   improvement in percent: ...
+
+** Help
+   List whatever help (if any) that you received, including help from
+   TAs or fellow students. (Such help is allowed, but we want you to
+   acknowledge it.)
+
+   ...
+
+** Comments
+   List any other comments here. Feel free to provide any feedback on
+   how much you learned from doing the assignment, and whether you
+   enjoyed doing it. In particular, tell us how this exercise could be
+   improved.
+ 
+   ...

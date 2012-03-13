@@ -12,6 +12,17 @@ public class QuickInsertion {
 		}
 	}
 	
+	// standard insertion sort of subarray - no external calls
+	private static void iSort(int[] a, int lo, int hi) {
+		for (int i = lo+1; i < hi; i++) {
+			for (int j = i; j > lo && (a[j] < a[j-1]); j--) {
+				int t = a[j];
+				a[j] = a[j-1];
+				a[j-1] = t;
+			}
+		}
+	}
+	
 	// standard qsort - no external calls
 	private static void qSort(int[] a, int lo, int hi) {
 		if (hi <= lo) return;
@@ -46,7 +57,7 @@ public class QuickInsertion {
 	    return j;
 	}
 	
-	// cutoff sort method
+	// sort method - quicksort w insertion sort cutoff
 	public static void sort(int[] a, int cutoff) {
 		
 	}
@@ -72,7 +83,7 @@ public class QuickInsertion {
 		
 		int[] test = randomIntList(10);
 		StdArrayIO.print(test);
-		iSort(test);
+		iSort(test, 5, test.length);
 		StdArrayIO.print(test);
 		test = randomIntList(10);
 		StdArrayIO.print(test);

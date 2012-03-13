@@ -1,18 +1,18 @@
 * Assignment: QuickInsertSort
 ** Student info:
-   - Group name:
-   - Name1:
-   - Email1:
-   - Name2:
-   - Email2:
-   - Operating system:
-   - Processor:
-   - Clock Speed:
+   - Group name: Algorythms/LordOfTheCode
+   - Name1: Lars Toft Jacobsen
+   - Email1: latj@itu.dk
+   - Name2: Alexander Kirk Jørgensen
+   - Email2: akir@itu.dk
+   - Operating system: Mac OS X/Win 7
+   - Processor: 2.2GHz Intel Core i7
+   - Clock Speed: Well...2.2GHz
    - Computer desciption (if that makes sense, e.g., "2008 MacBook
      Pro", "Commodore 64", "Intel-based box I assembled myself", 
-     etc.):
-   - Compiler:
-   - Text editor / IDE:
+     etc.): MacBook Pro 15" early 2011
+   - Compiler: javac 1.6.0_29
+   - Text editor / IDE: TextMate/Notepad++
 
 ** Assignment info:
    Mark one of the following boxes with an X

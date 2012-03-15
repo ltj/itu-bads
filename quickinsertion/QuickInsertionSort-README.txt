@@ -25,40 +25,40 @@
 	public static void main(String[] args) {
 		
 		int ntest = 100; // no. tests/cutoff value
-		int cmax = 15; // cutoff max value
-		double[] means = new double[cmax+1];
+		int cmin = 0; // cutoff min value
+		int cmax = 20; // cutoff max value
+		double[] runtime = new double[ntest];
 		
 		// for each size of array
 		for (int n = 100; n <= 1000000; n *= 10) {
-			double dev = 0.0;
-			double avg = 0.0;
-			double stdDeviate = 0.0;
+			StdOut.println("Testing for n="+n);
 			// for each cutoff value 0..cmax
-			for(int m = 0; m < cmax+1; m++) {
+			for(int m = cmin; m < cmax+1; m++) {
 				double total = 0.0;
+				double dev = 0.0;
+				double avg = 0.0;
+				double stdDeviate = 0.0;
 				// do ntest tests
 				for(int t = 0; t < ntest; t++) {
 					int[] a = randomIntList2(n, 10*n);
 					// time and sort
 					long start = System.currentTimeMillis();
 					sort(a, m);
-					total += (System.currentTimeMillis() - start) / 1000.0;
+					runtime[t] = (System.currentTimeMillis() - start) / 1000.0;
 				}
-				// runtime mean for m
-				means[m] = total / ntest;
-				// average runtime for all m
-				for (int k = 0; k < means.length; k++) {
-					avg += means[k];
+				// average runtime for all tests
+				for (int k = 0; k < runtime.length; k++) {
+					avg += runtime[k];
 				}
-				avg /= cmax+1;
+				avg /= ntest;
 				// std deviation
-				for (int l = 0; l < means.length; l++) {
-					dev += Math.pow(means[l]-avg, 2);
+				for (int l = 0; l < runtime.length; l++) {
+					dev += Math.pow(runtime[l]-avg, 2);
 				}
 				stdDeviate = Math.sqrt(dev/100);
+				StdOut.println("m="+m+" avg="+avg+" std dev="+stdDeviate);
 			}
-			StdOut.println("n="+n+" done");
-			prettyPrint(means, avg, stdDeviate);
+			StdOut.println("n="+n+" done\n\n");
 		}
 		
 	}
@@ -84,13 +84,13 @@
    remove the lines are write "Couldn't see a difference".
 
    N = 100:
-   No cutoff: ...
-   mean running time: ... 
-   standard deviation: ...
+   No cutoff:
+   mean running time: 5.0E-5 s
+   standard deviation: 2.18E-4
    
-   With cutoff = ...
-   mean running time: ... 
-   standard deviation: ...
+   With cutoff = 12
+   mean running time: 1.0E-5 s 
+   standard deviation: 9.95E-5
    improvement in percent: ...
 
    N = 1000:

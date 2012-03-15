@@ -97,7 +97,7 @@ public class QuickInsertion {
 		return il;
 	}
 	
-// test client
+	// test client
 	public static void main(String[] args) {
 		
 		int ntest = 100; // no. tests/cutoff value

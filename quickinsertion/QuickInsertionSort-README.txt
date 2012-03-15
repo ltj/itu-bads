@@ -16,12 +16,52 @@
 
 ** Assignment info:
    Mark one of the following boxes with an X
-   [ ] Yes, to the best of our knowledge, everything works as it
+   [X] Yes, to the best of our knowledge, everything works as it
    should. In particular, here is the test client that our code has
    passed:
 
 
-   ... (insert some Java code here)
+   	// test client
+	public static void main(String[] args) {
+		
+		int ntest = 100; // no. tests/cutoff value
+		int cmax = 15; // cutoff max value
+		double[] means = new double[cmax+1];
+		
+		// for each size of array
+		for (int n = 100; n <= 1000000; n *= 10) {
+			double dev = 0.0;
+			double avg = 0.0;
+			double stdDeviate = 0.0;
+			// for each cutoff value 0..cmax
+			for(int m = 0; m < cmax+1; m++) {
+				double total = 0.0;
+				// do ntest tests
+				for(int t = 0; t < ntest; t++) {
+					int[] a = randomIntList2(n, 10*n);
+					// time and sort
+					long start = System.currentTimeMillis();
+					sort(a, m);
+					total += (System.currentTimeMillis() - start) / 1000.0;
+				}
+				// runtime mean for m
+				means[m] = total / ntest;
+				// average runtime for all m
+				for (int k = 0; k < means.length; k++) {
+					avg += means[k];
+				}
+				avg /= cmax+1;
+				// std deviation
+				for (int l = 0; l < means.length; l++) {
+					dev += Math.pow(means[l]-avg, 2);
+				}
+				stdDeviate = Math.sqrt(dev/100);
+			}
+			StdOut.println("n="+n+" done");
+			prettyPrint(means, avg, stdDeviate);
+		}
+		
+	}
 
 
 
@@ -44,7 +84,7 @@
    remove the lines are write "Couldn't see a difference".
 
    N = 100:
-   No cutoff: 
+   No cutoff: ...
    mean running time: ... 
    standard deviation: ...
    

@@ -2,7 +2,7 @@ public class QuickInsertion {
 	
 	// standard insertion sort
 	private static void iSort(int[] a) {
-		iSort(a, 0, a.length);
+		iSort(a, 0, a.length-1);
 	}
 	
 	// standard insertion sort of subarray - no external calls
@@ -70,7 +70,7 @@ public class QuickInsertion {
 		qSort(a, 0, a.length-1, cutoff);
 	}
 	
-	// return randomized int list of size s
+	// return randomized int list of size
 	private static int[] randomIntList(int s) {
 		int[] il = new int[s];
 		// init
@@ -87,16 +87,55 @@ public class QuickInsertion {
 		return il;
 	}
 	
+	// ...randomIntList2 seems to be more compliant with
+	// the assignment text
+	private static int[] randomIntList2(int s, int bound) {
+		int[] il = new int[s];
+		for (int i = 0; i < il.length; i++) {
+			il[i] = StdRandom.uniform(bound);
+		}
+		return il;
+	}
+	
+	// test client
 	public static void main(String[] args) {
 		
-		int[] test = randomIntList(10);
-		StdArrayIO.print(test);
-		iSort(test, 5, test.length-1);
-		StdArrayIO.print(test);
-		test = randomIntList(1000);
-		StdArrayIO.print(test);
-		sort(test, 10);
-		StdArrayIO.print(test);
+		int ntest = 100; // no. tests/cutoff value
+		int cmin = 0; // cutoff min value
+		int cmax = 20; // cutoff max value
+		double[] runtime = new double[ntest];
+		
+		// for each size of array
+		for (int n = 100; n <= 1000000; n *= 10) {
+			StdOut.println("Testing for n="+n);
+			// for each cutoff value 0..cmax
+			for(int m = cmin; m < cmax+1; m++) {
+				double total = 0.0;
+				double dev = 0.0;
+				double avg = 0.0;
+				double stdDeviate = 0.0;
+				// do ntest tests
+				for(int t = 0; t < ntest; t++) {
+					int[] a = randomIntList2(n, 10*n);
+					// time and sort
+					long start = System.currentTimeMillis();
+					sort(a, m);
+					runtime[t] = (System.currentTimeMillis() - start) / 1000.0;
+				}
+				// average runtime for all tests
+				for (int k = 0; k < runtime.length; k++) {
+					avg += runtime[k];
+				}
+				avg /= ntest;
+				// std deviation
+				for (int l = 0; l < runtime.length; l++) {
+					dev += Math.pow(runtime[l]-avg, 2);
+				}
+				stdDeviate = Math.sqrt(dev/100);
+				StdOut.println("m="+m+" avg="+avg+" std dev="+stdDeviate);
+			}
+			StdOut.println("n="+n+" done\n\n");
+		}
 		
 	}
 	

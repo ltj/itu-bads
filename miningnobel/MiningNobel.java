@@ -39,28 +39,31 @@ public class MiningNobel
 	return count;
  }
    
- // main
-    public static void main(String[] args) {
+ 	// main
+ 	public static void main(String[] args) {
   
-	In in = new In(args[0]);
-	ArrayList<Double> Arr = new ArrayList<Double>();
-	String s = in.readLine();
-	while(in.hasNextLine()){
-		String[] split = s.split(",");
-		Arr.add(Double.parseDouble(split[1])); 
-		s = in.readLine();
-	}
+		In in = new In(args[0]);
+		ArrayList<Double> Arr = new ArrayList<Double>();
+		String s = in.readLine();
+		while(in.hasNextLine()){
+			String[] split = s.split(",");
+			Arr.add(Double.parseDouble(split[1])); 
+			s = in.readLine();
+		}
   
-	Double[] A = Arr.toArray(new Double[0]);
-	int n = A.length;
+		Double[] A = Arr.toArray(new Double[0]);
+		int n = A.length;
   
-	Stopwatch sw = new Stopwatch();
-	StdOut.println("Exhaustive search count (n="+n+"): " + exhaustiveCount(A));
-	StdOut.println("Exhaustive search time: " + sw.elapsedTime());
+		for (int j = 0; j < 2; j++) {
+	 		Stopwatch sw = new Stopwatch();
+			StdOut.println("Exhaustive search count (n="+n+"): " + exhaustiveCount(A));
+			StdOut.println("Exhaustive search time: " + sw.elapsedTime());
 
-	sw = new Stopwatch();
-	StdOut.println("Fast search count: " + fastCount(A));
-	StdOut.println("Fast search time: " + sw.elapsedTime());
-	in.close();
-    }
+			sw = new Stopwatch();
+			StdOut.println("Fast search count: " + fastCount(A));
+			StdOut.println("Fast search time: " + sw.elapsedTime());
+			in.close();
+		}
+	}
+
 }

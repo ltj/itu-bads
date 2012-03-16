@@ -44,10 +44,20 @@ Number of comparisons performed as a function of N:  ~N^4
 
 Experiments:
 
- N          time (seconds)
-------------------------------
-4		0.001
-352		2.996
+ N          time (seconds)	fast (seconds)
+------------------------------------------
+4			0.001
+128			0.042			0.02
+128			0.035			0.01
+256			0.552			0.106
+256			0.549			0.096
+352			1.95			0.205
+352			1.941			0.192
+512			8.667			0.946
+512			8.742			0.947
+1024		160.919			8.548
+1024		169.829			8.582
+
 
 [ ] Yes, our experiments are consistent with our theoretical analysis
 

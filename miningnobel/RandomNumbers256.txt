@@ -1,256 +1,256 @@
-Random Number: , 42.68
-Random Number: , -94.85
-Random Number: , -0.97
-Random Number: , 64.16
-Random Number: , 73.06
-Random Number: , 45.36
-Random Number: , 117.93
-Random Number: , -28.39
-Random Number: , -7.20
-Random Number: , -49.28
-Random Number: , 41.01
-Random Number: , 29.16
-Random Number: , 9.91
-Random Number: , 21.32
-Random Number: , 18.45
-Random Number: , -2.68
-Random Number: , 4.34
-Random Number: , -32.26
-Random Number: , -4.64
-Random Number: , 20.17
-Random Number: , -39.31
-Random Number: , -26.06
-Random Number: , -18.47
-Random Number: , -50.63
-Random Number: , 9.31
-Random Number: , -9.04
-Random Number: , 89.83
-Random Number: , 41.34
-Random Number: , 45.26
-Random Number: , -77.13
-Random Number: , -17.24
-Random Number: , 0.00
-Random Number: , -55.72
-Random Number: , -6.48
-Random Number: , 94.31
-Random Number: , 109.58
-Random Number: , -95.84
-Random Number: , 42.36
-Random Number: , -75.83
-Random Number: , -73.12
-Random Number: , 1.62
-Random Number: , -20.92
-Random Number: , 0.58
-Random Number: , 22.73
-Random Number: , -1.88
-Random Number: , -98.40
-Random Number: , -11.78
-Random Number: , 19.47
-Random Number: , 95.01
-Random Number: , -11.80
-Random Number: , 35.30
-Random Number: , 0.75
-Random Number: , -31.27
-Random Number: , -0.29
-Random Number: , -29.08
-Random Number: , -9.76
-Random Number: , 15.78
-Random Number: , 10.84
-Random Number: , 3.59
-Random Number: , -30.00
-Random Number: , -13.98
-Random Number: , -39.01
-Random Number: , -36.28
-Random Number: , 36.53
-Random Number: , -4.40
-Random Number: , -23.50
-Random Number: , 27.29
-Random Number: , -1.05
-Random Number: , 21.78
-Random Number: , 44.86
-Random Number: , 1.52
-Random Number: , 14.72
-Random Number: , 90.64
-Random Number: , -33.07
-Random Number: , 1.56
-Random Number: , 4.99
-Random Number: , -23.62
-Random Number: , 0.34
-Random Number: , 0.87
-Random Number: , -2.73
-Random Number: , 31.90
-Random Number: , 5.12
-Random Number: , -24.53
-Random Number: , -5.37
-Random Number: , 1.66
-Random Number: , -2.60
-Random Number: , -107.25
-Random Number: , 9.36
-Random Number: , 43.40
-Random Number: , -6.20
-Random Number: , 0.85
-Random Number: , -84.79
-Random Number: , 28.18
-Random Number: , -11.06
-Random Number: , -13.16
-Random Number: , -34.42
-Random Number: , 5.49
-Random Number: , -57.57
-Random Number: , 54.01
-Random Number: , -20.09
-Random Number: , 9.96
-Random Number: , -4.28
-Random Number: , 0.00
-Random Number: , -65.89
-Random Number: , 18.90
-Random Number: , -27.28
-Random Number: , 14.28
-Random Number: , -20.68
-Random Number: , -38.22
-Random Number: , 61.87
-Random Number: , -0.41
-Random Number: , -48.72
-Random Number: , 61.28
-Random Number: , -0.65
-Random Number: , 5.43
-Random Number: , -25.92
-Random Number: , 89.44
-Random Number: , -23.02
-Random Number: , -52.21
-Random Number: , 49.73
-Random Number: , -9.06
-Random Number: , 10.52
-Random Number: , 109.98
-Random Number: , -57.96
-Random Number: , -113.63
-Random Number: , 45.67
-Random Number: , -2.55
-Random Number: , -39.62
-Random Number: , 37.58
-Random Number: , -6.50
-Random Number: , -1.00
-Random Number: , -3.81
-Random Number: , 1.06
-Random Number: , -65.85
-Random Number: , 8.26
-Random Number: , 12.82
-Random Number: , -40.90
-Random Number: , -26.29
-Random Number: , -64.53
-Random Number: , 80.30
-Random Number: , 40.48
-Random Number: , -15.59
-Random Number: , -5.78
-Random Number: , -7.53
-Random Number: , -6.34
-Random Number: , -62.02
-Random Number: , -11.25
-Random Number: , 69.39
-Random Number: , 2.33
-Random Number: , 6.47
-Random Number: , 54.62
-Random Number: , 36.23
-Random Number: , 38.84
-Random Number: , -50.67
-Random Number: , -90.37
-Random Number: , -7.48
-Random Number: , 17.19
-Random Number: , 61.01
-Random Number: , -3.99
-Random Number: , -91.79
-Random Number: , -100.41
-Random Number: , -108.24
-Random Number: , 52.53
-Random Number: , -27.26
-Random Number: , 69.89
-Random Number: , -2.06
-Random Number: , -51.86
-Random Number: , -51.06
-Random Number: , -0.82
-Random Number: , -63.73
-Random Number: , 10.50
-Random Number: , 5.31
-Random Number: , -0.38
-Random Number: , 3.96
-Random Number: , -7.43
-Random Number: , 8.43
-Random Number: , 23.67
-Random Number: , -11.02
-Random Number: , 19.99
-Random Number: , -35.61
-Random Number: , 13.60
-Random Number: , 16.32
-Random Number: , 31.49
-Random Number: , 5.50
-Random Number: , 43.56
-Random Number: , -11.75
-Random Number: , -3.75
-Random Number: , 1.21
-Random Number: , -15.92
-Random Number: , 73.80
-Random Number: , 1.78
-Random Number: , 12.97
-Random Number: , 13.86
-Random Number: , -19.53
-Random Number: , -0.17
-Random Number: , 43.96
-Random Number: , 1.57
-Random Number: , 11.41
-Random Number: , -9.38
-Random Number: , 100.53
-Random Number: , 61.54
-Random Number: , 37.87
-Random Number: , 58.51
-Random Number: , -7.19
-Random Number: , -28.62
-Random Number: , -39.75
-Random Number: , -39.46
-Random Number: , 58.18
-Random Number: , 80.46
-Random Number: , 11.72
-Random Number: , 0.75
-Random Number: , -7.63
-Random Number: , 6.62
-Random Number: , 2.46
-Random Number: , -19.28
-Random Number: , -19.51
-Random Number: , 7.66
-Random Number: , 0.59
-Random Number: , -38.75
-Random Number: , 59.16
-Random Number: , 73.32
-Random Number: , 5.81
-Random Number: , -24.79
-Random Number: , -41.08
-Random Number: , -46.37
-Random Number: , 57.10
-Random Number: , 12.19
-Random Number: , -10.28
-Random Number: , 7.26
-Random Number: , -5.35
-Random Number: , -51.40
-Random Number: , 21.07
-Random Number: , -4.22
-Random Number: , -14.01
-Random Number: , -51.36
-Random Number: , -36.11
-Random Number: , 112.12
-Random Number: , -26.11
-Random Number: , -74.52
-Random Number: , 38.71
-Random Number: , -57.26
-Random Number: , 17.34
-Random Number: , -54.81
-Random Number: , 6.46
-Random Number: , -74.11
-Random Number: , -57.30
-Random Number: , -48.65
-Random Number: , -29.59
-Random Number: , -0.26
-Random Number: , 54.59
-Random Number: , -78.07
-Random Number: , 116.45
-Random Number: , 100.64
-Random Number: , -16.06
-Random Number: , -38.78
-Random Number: , 106.10
+number0 , -15.89
+number1 , -29.56
+number2 , -7.84
+number3 , 3.93
+number4 , 27.20
+number5 , 0.34
+number6 , -39.91
+number7 , 34.37
+number8 , 1.41
+number9 , -55.99
+number10 , 18.35
+number11 , 0.34
+number12 , 0.70
+number13 , -41.63
+number14 , -10.39
+number15 , 55.60
+number16 , 29.59
+number17 , -1.50
+number18 , 17.20
+number19 , -16.91
+number20 , 9.76
+number21 , -2.63
+number22 , 17.71
+number23 , 99.23
+number24 , 41.03
+number25 , -26.00
+number26 , -76.67
+number27 , 8.57
+number28 , -1.05
+number29 , -6.35
+number30 , 1.89
+number31 , -29.62
+number32 , -61.36
+number33 , -60.82
+number34 , -12.11
+number35 , 58.53
+number36 , 40.06
+number37 , -11.99
+number38 , 18.71
+number39 , 103.03
+number40 , 11.18
+number41 , -0.07
+number42 , 22.00
+number43 , -84.53
+number44 , -10.13
+number45 , 28.95
+number46 , 48.05
+number47 , -5.49
+number48 , 19.06
+number49 , 60.86
+number50 , -82.28
+number51 , -55.52
+number52 , 4.99
+number53 , -2.68
+number54 , -53.32
+number55 , -17.04
+number56 , 1.85
+number57 , 0.00
+number58 , 25.70
+number59 , -11.30
+number60 , -30.07
+number61 , -43.51
+number62 , -8.40
+number63 , 64.46
+number64 , -100.04
+number65 , -54.80
+number66 , -22.99
+number67 , -16.03
+number68 , -27.38
+number69 , 21.31
+number70 , 5.71
+number71 , 19.45
+number72 , -17.24
+number73 , 33.60
+number74 , 25.45
+number75 , 3.59
+number76 , -21.68
+number77 , 45.92
+number78 , 4.98
+number79 , 4.89
+number80 , 77.62
+number81 , -6.39
+number82 , 10.03
+number83 , 7.43
+number84 , 15.89
+number85 , 39.83
+number86 , -90.97
+number87 , 49.26
+number88 , -25.39
+number89 , 78.98
+number90 , -19.33
+number91 , 23.84
+number92 , -4.15
+number93 , -16.29
+number94 , 15.79
+number95 , 3.65
+number96 , -5.11
+number97 , -84.80
+number98 , 6.39
+number99 , -69.35
+number100 , -13.31
+number101 , 1.42
+number102 , 28.27
+number103 , -52.42
+number104 , -55.93
+number105 , 15.32
+number106 , 14.80
+number107 , -45.74
+number108 , 70.33
+number109 , -4.15
+number110 , -1.15
+number111 , -52.90
+number112 , 24.41
+number113 , -107.19
+number114 , -35.61
+number115 , -18.81
+number116 , 39.97
+number117 , 23.98
+number118 , 9.36
+number119 , -33.73
+number120 , 53.94
+number121 , 14.68
+number122 , -53.07
+number123 , 15.72
+number124 , 30.91
+number125 , -13.81
+number126 , -18.71
+number127 , 7.68
+number128 , -8.90
+number129 , -53.39
+number130 , 39.13
+number131 , -49.87
+number132 , -55.19
+number133 , -10.49
+number134 , -88.05
+number135 , -21.42
+number136 , -27.32
+number137 , 16.12
+number138 , 20.90
+number139 , -10.21
+number140 , -35.81
+number141 , 59.61
+number142 , 53.45
+number143 , -10.49
+number144 , -2.30
+number145 , -30.54
+number146 , 11.32
+number147 , 25.14
+number148 , -53.72
+number149 , -25.39
+number150 , -9.90
+number151 , 8.22
+number152 , -33.01
+number153 , -10.97
+number154 , 115.05
+number155 , -19.37
+number156 , -54.46
+number157 , 5.87
+number158 , 28.96
+number159 , -1.77
+number160 , 15.13
+number161 , -11.05
+number162 , -33.78
+number163 , -7.84
+number164 , -2.56
+number165 , -105.87
+number166 , 47.71
+number167 , 11.73
+number168 , -22.83
+number169 , -32.47
+number170 , 65.98
+number171 , -86.62
+number172 , -19.47
+number173 , -86.47
+number174 , -2.91
+number175 , -59.11
+number176 , 7.53
+number177 , 21.61
+number178 , -14.77
+number179 , 104.35
+number180 , -41.55
+number181 , -26.77
+number182 , -27.72
+number183 , -64.14
+number184 , -112.71
+number185 , -5.50
+number186 , -4.00
+number187 , -26.92
+number188 , 44.11
+number189 , -58.89
+number190 , -1.10
+number191 , 5.72
+number192 , 57.79
+number193 , 66.36
+number194 , -62.43
+number195 , 18.16
+number196 , -2.60
+number197 , -9.88
+number198 , -17.71
+number199 , 15.31
+number200 , 18.97
+number201 , -53.92
+number202 , 63.52
+number203 , 1.07
+number204 , 40.72
+number205 , -7.87
+number206 , 20.79
+number207 , -20.29
+number208 , 21.79
+number209 , -2.01
+number210 , -30.12
+number211 , -0.40
+number212 , -48.63
+number213 , -2.19
+number214 , 8.41
+number215 , 1.97
+number216 , 18.78
+number217 , -79.64
+number218 , 52.55
+number219 , -10.81
+number220 , 10.81
+number221 , 6.40
+number222 , -66.66
+number223 , 38.25
+number224 , 15.05
+number225 , 62.29
+number226 , 0.34
+number227 , -13.32
+number228 , -38.36
+number229 , 11.64
+number230 , -18.93
+number231 , 32.10
+number232 , 4.27
+number233 , 8.95
+number234 , 28.32
+number235 , -7.49
+number236 , 6.18
+number237 , -2.47
+number238 , -12.57
+number239 , 65.33
+number240 , 29.02
+number241 , -4.58
+number242 , -3.41
+number243 , -24.35
+number244 , -89.78
+number245 , -22.46
+number246 , 28.10
+number247 , -16.38
+number248 , 49.68
+number249 , -106.04
+number250 , -59.92
+number251 , -19.92
+number252 , 51.41
+number253 , 56.93
+number254 , 66.14
+number255 , -35.56

@@ -1,12 +1,12 @@
 * Assignment: Gorilla
 ** Student info:
-   - Group name:
-   - Name1:
-   - Email1:
-   - Name2:
-   - Email2:
-   - Compiler:
-   - Text editor / IDE:
+   - Group name: Algorythms && Lord of the Code
+   - Name1: Lars Toft Jacobsen
+   - Email1: latj@itu.dk
+   - Name2: Alexander Kirk Jørgensen
+   - Email2: akir@itu.dk
+   - Compiler: 
+   - Text editor / IDE: TextMate / Notepad++
 
 ** Assignment info:
    Mark one of the following boxes with an X

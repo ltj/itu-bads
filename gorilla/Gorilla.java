@@ -49,41 +49,35 @@ public class Gorilla {
 		return Math.sqrt(vectorDot(v, v));
 	}
 	
-	// vector angle
+	// vector angle (cosine)
 	public static double vectorAngle(int[] v1, int[] v2) {
-		double costoa = vectorDot(v1, v2) / (vectorLength(v1) * vectorLength(v2));
-		return Math.acos(costoa);
+		return vectorDot(v1, v2) / (vectorLength(v1) * vectorLength(v2));
 	}
 	
 	// test client
 	public static void main(String[] args) {
 		
 		// test vector methods
-		int[] t1 = {1, 0};
-		int[] t2 = {0, 1};
+		int[] t1 = {2, 3};
+		int[] t2 = {1, -2};
 		StdOut.println("vl: "+vectorLength(t1));
-		StdOut.println("va: "+vectorAngle(t1, t2));
+		StdOut.println("vd: "+vectorDot(t1, t2));
+		StdOut.println("va: "+vectorAngle(t1, t2)+" "+Math.PI/2);
 		
-		ArrayList<Profile> speciesCol = new ArrayList<Profile>();
+		ArrayList<Profile> species = new ArrayList<Profile>();
 		
-		// read sequences from file, compute a profile for each and
-		// store the result in the 'species' array 
 		In in = new In(args[0]);
 		while(in.hasNextLine()) {
 			String line = in.readLine();
 			String spec = line.substring(1, line.indexOf(" "));
 			String seq = in.readLine()+in.readLine()+in.readLine();
 			int[] pro = computeProfile(seq); 
-			speciesCol.add(new Profile(spec, seq, pro));
+			species.add(new Profile(spec, seq, pro));
 		}
 		
-		Profile[] species = speciesCol.toArray(new Profile[0]);
-		for(int i=0; i < species.length; i++) {
-			for(int j = i+1; j < species.length; j++) {
-				double sim = vectorAngle(species[i].profile, species[j].profile);
-				StdOut.println(species[i].name + " and " + species[j].name + " similarity (angle): " + sim);
-			}
-		}
-		
+		// random 
+		StdOut.println("hel".hashCode());
+		StdOut.println("hello".length());
+		StdArrayIO.print(computeProfile("hello, world"));
 	}
 }

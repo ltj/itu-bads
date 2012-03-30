@@ -78,11 +78,29 @@ public class Gorilla {
 		}
 		
 		Profile[] species = speciesCol.toArray(new Profile[0]);
+		
+		for(Profile animal1 : species) {
+			double closest = 1.0;
+			for(Profile animal2 : species) {
+				if(animal1.name.equals(animal2.name)) continue;
+				
+				double dist = vectorAngle(animal1.profile, animal2.profile);
+				if (dist < closest) {
+					animal1.relative = animal2.name;
+					closest = dist;
+				}
+			}
+		}
+		
 		for(int i=0; i < species.length; i++) {
 			for(int j = i+1; j < species.length; j++) {
 				double sim = vectorAngle(species[i].profile, species[j].profile);
 				StdOut.println(species[i].name + " and " + species[j].name + " similarity (angle): " + sim);
 			}
+		}
+		
+		for(Profile animal : species) {
+			StdOut.println("Closest relative to " + animal.name + " is " + animal.relative);
 		}
 		
 	}

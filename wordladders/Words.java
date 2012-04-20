@@ -1,4 +1,8 @@
+import java.util.ArrayList;
+
 public class Words {
+	
+	private static String[] words;
 	
 	// returns true if you can go from word 'from' to word 'to'
 	public static boolean wordLinksTo(String from, String to) {
@@ -11,11 +15,18 @@ public class Words {
 	}
 	
 	public static void main(String[] args) {
-		if(wordLinksTo(args[0], args[1])) {
-			StdOut.println("yes");
+		
+		ArrayList<String> data = new ArrayList<String>();
+		
+		In in = new In(args[0]);
+		while(in.hasNextLine()) {
+			String line = in.readLine();
+			data.add(line);
 		}
-		else {
-			StdOut.println("no");
-		}
+		
+		words = data.toArray(new String[0]);
+		
+		Digraph dg = new Digraph(words.length);
+		StdOut.println(dg);
 	}
 }

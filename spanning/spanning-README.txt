@@ -1,17 +1,17 @@
 * Assignment: SpanningUSA
 ** Student info:
-   - Group name:
-   - Name1:
-   - Email1:
-   - Name2:
-   - Email2:
-   - Compiler:
-   - Text editor / IDE:
+   - Group name: Algorythms/LordoftheCode
+   - Name1: Lars Toft Jacobsen
+   - Email1: latj@itu.dk
+   - Name2: Alexander Kirk Jørgensen
+   - Email2: akir@itu.dk
+   - Compiler: javac 1.6.0_31
+   - Text editor / IDE: TextMate
 
 ** Assignment info:
    Mark one of the following boxes with an X
 
-   [ ] Yes, to the best of our knowledge, everything works as it 
+   [X] Yes, to the best of our knowledge, everything works as it 
        should. In particular, it returns 16598
 
 
@@ -29,7 +29,7 @@
    TAs or fellow students. (Such help is allowed, but we want you to
    acknowledge it.)
 
-   ...
+   The book *really* helped :)
 
 ** Comments
    List any other comments here. Feel free to provide any feedback on
